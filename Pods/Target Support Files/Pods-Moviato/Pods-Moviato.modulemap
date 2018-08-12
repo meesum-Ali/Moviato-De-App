@@ -1,0 +1,6 @@
+framework module Pods_Moviato {
+  umbrella header "Pods-Moviato-umbrella.h"
+
+  export *
+  module * { export * }
+}

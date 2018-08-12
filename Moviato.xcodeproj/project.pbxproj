@@ -14,6 +14,7 @@
 		CCD4BCD42120133F00A3CB99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD4BCD22120133F00A3CB99 /* LaunchScreen.storyboard */; };
 		CCD4BCDF2120133F00A3CB99 /* MoviatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCDE2120133F00A3CB99 /* MoviatoTests.swift */; };
 		CCD4BCEA2120133F00A3CB99 /* MoviatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCE92120133F00A3CB99 /* MoviatoUITests.swift */; };
+		E0534E0962AB158C19187812 /* Pods_Moviato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB335D77B6765F7A20C091A /* Pods_Moviato.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		210D03F47878A3036F8AE191 /* Pods-Moviato.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moviato.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Moviato/Pods-Moviato.debug.xcconfig"; sourceTree = "<group>"; };
+		4AF3FAB0041451C6623EFC0A /* Pods-Moviato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moviato.release.xcconfig"; path = "Pods/Target Support Files/Pods-Moviato/Pods-Moviato.release.xcconfig"; sourceTree = "<group>"; };
+		CAB335D77B6765F7A20C091A /* Pods_Moviato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moviato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD4BCC62120133F00A3CB99 /* Moviato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moviato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD4BCC92120133F00A3CB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD4BCCB2120133F00A3CB99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0534E0962AB158C19187812 /* Pods_Moviato.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66BA56D2B538B2B4F4A2CCCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				210D03F47878A3036F8AE191 /* Pods-Moviato.debug.xcconfig */,
+				4AF3FAB0041451C6623EFC0A /* Pods-Moviato.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CCD4BCBD2120133F00A3CB99 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				CCD4BCDD2120133F00A3CB99 /* MoviatoTests */,
 				CCD4BCE82120133F00A3CB99 /* MoviatoUITests */,
 				CCD4BCC72120133F00A3CB99 /* Products */,
+				66BA56D2B538B2B4F4A2CCCA /* Pods */,
+				FFE5AECE27E3196040E85304 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = MoviatoUITests;
 			sourceTree = "<group>";
 		};
+		FFE5AECE27E3196040E85304 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAB335D77B6765F7A20C091A /* Pods_Moviato.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCD4BCEE2120133F00A3CB99 /* Build configuration list for PBXNativeTarget "Moviato" */;
 			buildPhases = (
+				8CFDBB7161946A41566FFA47 /* [CP] Check Pods Manifest.lock */,
 				CCD4BCC22120133F00A3CB99 /* Sources */,
 				CCD4BCC32120133F00A3CB99 /* Frameworks */,
 				CCD4BCC42120133F00A3CB99 /* Resources */,
+				24C54A1711F5416AB1F318A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +279,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24C54A1711F5416AB1F318A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Moviato/Pods-Moviato-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Moviato/Pods-Moviato-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CFDBB7161946A41566FFA47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moviato-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCD4BCC22120133F00A3CB99 /* Sources */ = {
@@ -424,6 +489,7 @@
 		};
 		CCD4BCEF2120133F00A3CB99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 210D03F47878A3036F8AE191 /* Pods-Moviato.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +504,7 @@
 		};
 		CCD4BCF02120133F00A3CB99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF3FAB0041451C6623EFC0A /* Pods-Moviato.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
