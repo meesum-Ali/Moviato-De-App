@@ -14,9 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searckStackView: UIStackView!
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
-    
-    //    let searchController = UISearchController(searchResultsController: nil)
-    
+        
     var sugestionsKeys: [String] = []
     var sugestionsObjects: [String:CustomResponse] = [:]
     
@@ -24,24 +22,11 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "Moviato"
-        // Setup the Search Controller
-//        searchController.searchResultsUpdater = self
-//        if #available(iOS 9.1, *) {
-//            searchController.obscuresBackgroundDuringPresentation = false
-//        } else {
-//            // Fallback on earlier versions
-//        }
         
-//        searchController.dimsBackgroundDuringPresentation = false
-//        searchController.hidesNavigationBarDuringPresentation = false
-//        searchController.searchBar.placeholder = "Search"
-//        searchController.searchBar.isTranslucent = true
-//
-//        searchController.view.layoutIfNeeded()
+        searchButton.layer.cornerRadius = searchButton.frame.height/2.0
         
         suggestionListTableView.tableFooterView = UIView()
         
-//        callSearchApiRequestAndRouteToMovieList()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +34,14 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func searchButtonTapped(_ sender: UIButton) {
+        
+        searchTextField.resignFirstResponder()
+        if searchTextField.text == "" {
+            showAlert(title: "Alert", msg: "Please type movie name then press search.", vc: self, completionHandler: {
+                return
+            })
+            return
+        }
         callSearchApiRequestAndRouteToMovieList()
     }
     

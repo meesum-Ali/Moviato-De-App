@@ -12,7 +12,6 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
             <string>HelveticaNeue-Medium</string>
         </array>
@@ -42,11 +41,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qNO-lA-z81">
-                                <rect key="frame" x="0.0" y="64" width="375" height="70"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qNO-lA-z81">
+                                <rect key="frame" x="10" y="74" width="355" height="85"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Movie e.g &quot;Batman&quot;" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lcH-Ga-OpH">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Movie e.g &quot;Batman&quot;" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lcH-Ga-OpH">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="kj6-Qz-Dlp"/>
                                         </constraints>
@@ -55,12 +54,16 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adQ-wk-sYx">
-                                        <rect key="frame" x="0.0" y="40" width="375" height="30"/>
+                                        <rect key="frame" x="0.0" y="45" width="355" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="ohi-UB-32Q"/>
+                                            <constraint firstAttribute="height" constant="40" id="ohi-UB-32Q"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Search"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Search">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                         <connections>
                                             <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S1q-4W-fUX"/>
                                         </connections>
@@ -68,22 +71,22 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pin-eO-g0j">
-                                <rect key="frame" x="0.0" y="134" width="375" height="533"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="169" width="375" height="498"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="lxT-3h-tYg"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="uLv-ua-a5T"/>
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pin-eO-g0j" secondAttribute="bottom" id="Gaa-LB-V9T"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qNO-lA-z81" secondAttribute="trailing" id="IGT-bk-XV0"/>
-                            <constraint firstItem="qNO-lA-z81" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YUp-bF-8X4"/>
-                            <constraint firstItem="pin-eO-g0j" firstAttribute="top" secondItem="qNO-lA-z81" secondAttribute="bottom" id="fzI-j5-1Z7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qNO-lA-z81" secondAttribute="trailing" constant="10" id="IGT-bk-XV0"/>
+                            <constraint firstItem="qNO-lA-z81" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="YUp-bF-8X4"/>
+                            <constraint firstItem="pin-eO-g0j" firstAttribute="top" secondItem="qNO-lA-z81" secondAttribute="bottom" constant="10" id="fzI-j5-1Z7"/>
                             <constraint firstItem="pin-eO-g0j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s0N-9J-FcO"/>
-                            <constraint firstItem="qNO-lA-z81" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yax-Oi-iF7"/>
+                            <constraint firstItem="qNO-lA-z81" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="yax-Oi-iF7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pin-eO-g0j" secondAttribute="trailing" id="ysk-YD-nQT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
