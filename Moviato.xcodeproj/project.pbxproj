@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCD4BCCA2120133F00A3CB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCC92120133F00A3CB99 /* AppDelegate.swift */; };
+		CCD4BCCC2120133F00A3CB99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCCB2120133F00A3CB99 /* ViewController.swift */; };
+		CCD4BCCF2120133F00A3CB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD4BCCD2120133F00A3CB99 /* Main.storyboard */; };
+		CCD4BCD12120133F00A3CB99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD4BCD02120133F00A3CB99 /* Assets.xcassets */; };
+		CCD4BCD42120133F00A3CB99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD4BCD22120133F00A3CB99 /* LaunchScreen.storyboard */; };
+		CCD4BCDF2120133F00A3CB99 /* MoviatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCDE2120133F00A3CB99 /* MoviatoTests.swift */; };
+		CCD4BCEA2120133F00A3CB99 /* MoviatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCE92120133F00A3CB99 /* MoviatoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCD4BCDB2120133F00A3CB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCD4BCBE2120133F00A3CB99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCD4BCC52120133F00A3CB99;
+			remoteInfo = Moviato;
+		};
+		CCD4BCE62120133F00A3CB99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCD4BCBE2120133F00A3CB99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCD4BCC52120133F00A3CB99;
+			remoteInfo = Moviato;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCD4BCC62120133F00A3CB99 /* Moviato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moviato.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD4BCC92120133F00A3CB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCD4BCCB2120133F00A3CB99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCD4BCCE2120133F00A3CB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCD4BCD02120133F00A3CB99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCD4BCD32120133F00A3CB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCD4BCD52120133F00A3CB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD4BCDA2120133F00A3CB99 /* MoviatoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviatoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD4BCDE2120133F00A3CB99 /* MoviatoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviatoTests.swift; sourceTree = "<group>"; };
+		CCD4BCE02120133F00A3CB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCD4BCE52120133F00A3CB99 /* MoviatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD4BCE92120133F00A3CB99 /* MoviatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviatoUITests.swift; sourceTree = "<group>"; };
+		CCD4BCEB2120133F00A3CB99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCD4BCC32120133F00A3CB99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD4BCD72120133F00A3CB99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD4BCE22120133F00A3CB99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCD4BCBD2120133F00A3CB99 = {
+			isa = PBXGroup;
+			children = (
+				CCD4BCC82120133F00A3CB99 /* Moviato */,
+				CCD4BCDD2120133F00A3CB99 /* MoviatoTests */,
+				CCD4BCE82120133F00A3CB99 /* MoviatoUITests */,
+				CCD4BCC72120133F00A3CB99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCD4BCC72120133F00A3CB99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4BCC62120133F00A3CB99 /* Moviato.app */,
+				CCD4BCDA2120133F00A3CB99 /* MoviatoTests.xctest */,
+				CCD4BCE52120133F00A3CB99 /* MoviatoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCD4BCC82120133F00A3CB99 /* Moviato */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4BCC92120133F00A3CB99 /* AppDelegate.swift */,
+				CCD4BCCB2120133F00A3CB99 /* ViewController.swift */,
+				CCD4BCCD2120133F00A3CB99 /* Main.storyboard */,
+				CCD4BCD02120133F00A3CB99 /* Assets.xcassets */,
+				CCD4BCD22120133F00A3CB99 /* LaunchScreen.storyboard */,
+				CCD4BCD52120133F00A3CB99 /* Info.plist */,
+			);
+			path = Moviato;
+			sourceTree = "<group>";
+		};
+		CCD4BCDD2120133F00A3CB99 /* MoviatoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4BCDE2120133F00A3CB99 /* MoviatoTests.swift */,
+				CCD4BCE02120133F00A3CB99 /* Info.plist */,
+			);
+			path = MoviatoTests;
+			sourceTree = "<group>";
+		};
+		CCD4BCE82120133F00A3CB99 /* MoviatoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4BCE92120133F00A3CB99 /* MoviatoUITests.swift */,
+				CCD4BCEB2120133F00A3CB99 /* Info.plist */,
+			);
+			path = MoviatoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCD4BCC52120133F00A3CB99 /* Moviato */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCD4BCEE2120133F00A3CB99 /* Build configuration list for PBXNativeTarget "Moviato" */;
+			buildPhases = (
+				CCD4BCC22120133F00A3CB99 /* Sources */,
+				CCD4BCC32120133F00A3CB99 /* Frameworks */,
+				CCD4BCC42120133F00A3CB99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Moviato;
+			productName = Moviato;
+			productReference = CCD4BCC62120133F00A3CB99 /* Moviato.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCD4BCD92120133F00A3CB99 /* MoviatoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCD4BCF12120133F00A3CB99 /* Build configuration list for PBXNativeTarget "MoviatoTests" */;
+			buildPhases = (
+				CCD4BCD62120133F00A3CB99 /* Sources */,
+				CCD4BCD72120133F00A3CB99 /* Frameworks */,
+				CCD4BCD82120133F00A3CB99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCD4BCDC2120133F00A3CB99 /* PBXTargetDependency */,
+			);
+			name = MoviatoTests;
+			productName = MoviatoTests;
+			productReference = CCD4BCDA2120133F00A3CB99 /* MoviatoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCD4BCE42120133F00A3CB99 /* MoviatoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCD4BCF42120133F00A3CB99 /* Build configuration list for PBXNativeTarget "MoviatoUITests" */;
+			buildPhases = (
+				CCD4BCE12120133F00A3CB99 /* Sources */,
+				CCD4BCE22120133F00A3CB99 /* Frameworks */,
+				CCD4BCE32120133F00A3CB99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCD4BCE72120133F00A3CB99 /* PBXTargetDependency */,
+			);
+			name = MoviatoUITests;
+			productName = MoviatoUITests;
+			productReference = CCD4BCE52120133F00A3CB99 /* MoviatoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCD4BCBE2120133F00A3CB99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = SMeesumAli;
+				TargetAttributes = {
+					CCD4BCC52120133F00A3CB99 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					CCD4BCD92120133F00A3CB99 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CCD4BCC52120133F00A3CB99;
+					};
+					CCD4BCE42120133F00A3CB99 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CCD4BCC52120133F00A3CB99;
+					};
+				};
+			};
+			buildConfigurationList = CCD4BCC12120133F00A3CB99 /* Build configuration list for PBXProject "Moviato" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCD4BCBD2120133F00A3CB99;
+			productRefGroup = CCD4BCC72120133F00A3CB99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCD4BCC52120133F00A3CB99 /* Moviato */,
+				CCD4BCD92120133F00A3CB99 /* MoviatoTests */,
+				CCD4BCE42120133F00A3CB99 /* MoviatoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCD4BCC42120133F00A3CB99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD4BCD42120133F00A3CB99 /* LaunchScreen.storyboard in Resources */,
+				CCD4BCD12120133F00A3CB99 /* Assets.xcassets in Resources */,
+				CCD4BCCF2120133F00A3CB99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD4BCD82120133F00A3CB99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD4BCE32120133F00A3CB99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCD4BCC22120133F00A3CB99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD4BCCC2120133F00A3CB99 /* ViewController.swift in Sources */,
+				CCD4BCCA2120133F00A3CB99 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD4BCD62120133F00A3CB99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD4BCDF2120133F00A3CB99 /* MoviatoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD4BCE12120133F00A3CB99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD4BCEA2120133F00A3CB99 /* MoviatoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCD4BCDC2120133F00A3CB99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCD4BCC52120133F00A3CB99 /* Moviato */;
+			targetProxy = CCD4BCDB2120133F00A3CB99 /* PBXContainerItemProxy */;
+		};
+		CCD4BCE72120133F00A3CB99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCD4BCC52120133F00A3CB99 /* Moviato */;
+			targetProxy = CCD4BCE62120133F00A3CB99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCD4BCCD2120133F00A3CB99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCD4BCCE2120133F00A3CB99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCD4BCD22120133F00A3CB99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCD4BCD32120133F00A3CB99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCD4BCEC2120133F00A3CB99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCD4BCED2120133F00A3CB99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCD4BCEF2120133F00A3CB99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Moviato/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SMeesumAli.Moviato;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCD4BCF02120133F00A3CB99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Moviato/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SMeesumAli.Moviato;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCD4BCF22120133F00A3CB99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoviatoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SMeesumAli.MoviatoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moviato.app/Moviato";
+			};
+			name = Debug;
+		};
+		CCD4BCF32120133F00A3CB99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoviatoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SMeesumAli.MoviatoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Moviato.app/Moviato";
+			};
+			name = Release;
+		};
+		CCD4BCF52120133F00A3CB99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoviatoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SMeesumAli.MoviatoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moviato;
+			};
+			name = Debug;
+		};
+		CCD4BCF62120133F00A3CB99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoviatoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SMeesumAli.MoviatoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Moviato;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCD4BCC12120133F00A3CB99 /* Build configuration list for PBXProject "Moviato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD4BCEC2120133F00A3CB99 /* Debug */,
+				CCD4BCED2120133F00A3CB99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCD4BCEE2120133F00A3CB99 /* Build configuration list for PBXNativeTarget "Moviato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD4BCEF2120133F00A3CB99 /* Debug */,
+				CCD4BCF02120133F00A3CB99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCD4BCF12120133F00A3CB99 /* Build configuration list for PBXNativeTarget "MoviatoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD4BCF22120133F00A3CB99 /* Debug */,
+				CCD4BCF32120133F00A3CB99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCD4BCF42120133F00A3CB99 /* Build configuration list for PBXNativeTarget "MoviatoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD4BCF52120133F00A3CB99 /* Debug */,
+				CCD4BCF62120133F00A3CB99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCD4BCBE2120133F00A3CB99 /* Project object */;
+}
