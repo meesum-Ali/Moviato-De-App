@@ -9,13 +9,14 @@
 import Foundation
 import UIKit
 
-public class CustomRequest: NSObject, Codable {
+class CustomRequest: NSObject, Codable {
     
-    public var header:RequestHeader?
-    public var body:RequestBody?
+     var api_key:String? = kApiKey
+     var query:String?
+     var page:String?
     
-    public override init() {
-        header = RequestHeader()
-        body = RequestBody()
+     override init() {
+        query = ""
+        page = ""
     }
 }

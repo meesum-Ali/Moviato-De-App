@@ -1,4 +1,4 @@
-7/*
+/*
 Copyright (c) 2018 Swift Models Generated from JSON powered by http://www.json4swift.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -12,26 +12,11 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
-struct Json4Swift_Base : Codable {
-	let page : Int?
+class MovieResponse : Codable {
+
+    let page : Int?
 	let total_results : Int?
 	let total_pages : Int?
 	let results : [Results]?
-
-	enum CodingKeys: String, CodingKey {
-
-		case page = "page"
-		case total_results = "total_results"
-		case total_pages = "total_pages"
-		case results = "results"
-	}
-
-	init(from decoder: Decoder) throws {
-		let values = try decoder.container(keyedBy: CodingKeys.self)
-		page = try values.decodeIfPresent(Int.self, forKey: .page)
-		total_results = try values.decodeIfPresent(Int.self, forKey: .total_results)
-		total_pages = try values.decodeIfPresent(Int.self, forKey: .total_pages)
-		results = try values.decodeIfPresent([Results].self, forKey: .results)
-	}
 
 }

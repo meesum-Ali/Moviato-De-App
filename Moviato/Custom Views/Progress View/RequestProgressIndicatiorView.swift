@@ -36,19 +36,9 @@ class RequestProgressIndicatiorView: UIView {
         nib.instantiate(withOwner: self, options: nil)
         view.frame = bounds
         addSubview(view)
-        self.setNewStyle()
-    }
-    
-    //MARK:- Styles Method
-    func setOldStyle() {
-        self.view.backgroundColor = Color_Constants.popUpBackgroundColor_Black
-        setLblStyle(lbls: [headLbl], style: .Value_Lbl_Gray_Bold)
-        setLblStyle(lbls: [detailLbl], style: .Field_Lbl_Gray_Bold)
-    }
-    func setNewStyle() {
-        self.view.backgroundColor = Color_Constants.popUpBackgroundColor_Green
-        setLblStyle(lbls: [headLbl], style: .Value_Lbl_Green_Bold)
-        setLblStyle(lbls: [detailLbl], style: .Field_Lbl_Green_Bold)
+        
+        self.backgroundColor = UIColorFromRGB(rgbValue: 0x000000,
+                                              alphaValue: 0.7)
     }
     
 }

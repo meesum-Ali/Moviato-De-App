@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+var kErrorPerformingOperation : String = {
+    return "We are unable to process your request. Please try again later."//"Error performing operation"
+}()
+
+var kConnectionError : String = {
+    return "Connection error"
+}()

@@ -9,13 +9,10 @@
 import Foundation
 
 public class CustomResponse: NSObject, Codable  {
+   
+    var page : Int?
+    var total_results : Int?
+    var total_pages : Int?
+    var results : [Results]?
     
-    var header: ResponseHeader?
-    var body: ResponseBody?
-    
-    public override init() {
-        header = ResponseHeader()
-        body = ResponseBody()
-    }
-
 }

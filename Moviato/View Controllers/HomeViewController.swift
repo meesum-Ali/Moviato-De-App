@@ -10,9 +10,25 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var movieListTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        movieListTableView.tableFooterView = UIView()
+        
+        let requestObj = CustomRequest()
+        requestObj.query = "Batman"
+        requestObj.page = "1"
+        
+        networkCall(requestObj, self, true) { (resp, isSuccess) in
+            
+            if isSuccess {
+                print(resp?.page ?? "not found")
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +37,11 @@ class HomeViewController: UIViewController {
     }
 
 
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    
+    
 }
 
