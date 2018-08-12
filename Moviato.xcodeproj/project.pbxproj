@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CCD4BCCA2120133F00A3CB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCC92120133F00A3CB99 /* AppDelegate.swift */; };
-		CCD4BCCC2120133F00A3CB99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCCB2120133F00A3CB99 /* ViewController.swift */; };
+		CCD4BCCC2120133F00A3CB99 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCCB2120133F00A3CB99 /* HomeViewController.swift */; };
 		CCD4BCCF2120133F00A3CB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD4BCCD2120133F00A3CB99 /* Main.storyboard */; };
 		CCD4BCD12120133F00A3CB99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD4BCD02120133F00A3CB99 /* Assets.xcassets */; };
 		CCD4BCD42120133F00A3CB99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD4BCD22120133F00A3CB99 /* LaunchScreen.storyboard */; };
@@ -40,7 +40,7 @@
 		CAB335D77B6765F7A20C091A /* Pods_Moviato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moviato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD4BCC62120133F00A3CB99 /* Moviato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moviato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD4BCC92120133F00A3CB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCD4BCCB2120133F00A3CB99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCD4BCCB2120133F00A3CB99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CCD4BCCE2120133F00A3CB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCD4BCD02120133F00A3CB99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCD4BCD32120133F00A3CB99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,6 +88,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CC3F8F102120303A0060DB56 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Classes";
+			sourceTree = "<group>";
+		};
+		CC3F8F112120304D0060DB56 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4BCCB2120133F00A3CB99 /* HomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CC3F8F12212030710060DB56 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CCD4BCCD2120133F00A3CB99 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
 		CCD4BCBD2120133F00A3CB99 = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				CCD4BCC92120133F00A3CB99 /* AppDelegate.swift */,
-				CCD4BCCB2120133F00A3CB99 /* ViewController.swift */,
-				CCD4BCCD2120133F00A3CB99 /* Main.storyboard */,
+				CC3F8F12212030710060DB56 /* StoryBoards */,
+				CC3F8F112120304D0060DB56 /* View Controllers */,
+				CC3F8F102120303A0060DB56 /* Model Classes */,
 				CCD4BCD02120133F00A3CB99 /* Assets.xcassets */,
 				CCD4BCD22120133F00A3CB99 /* LaunchScreen.storyboard */,
 				CCD4BCD52120133F00A3CB99 /* Info.plist */,
@@ -324,7 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD4BCCC2120133F00A3CB99 /* ViewController.swift in Sources */,
+				CCD4BCCC2120133F00A3CB99 /* HomeViewController.swift in Sources */,
 				CCD4BCCA2120133F00A3CB99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
