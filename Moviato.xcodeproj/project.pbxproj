@@ -21,6 +21,8 @@
 		CC3F8F2F21203BDA0060DB56 /* CustomResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F8F2E21203BDA0060DB56 /* CustomResponse.swift */; };
 		CC3F8F34212041B10060DB56 /* MovieResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F8F32212041B10060DB56 /* MovieResponse.swift */; };
 		CC3F8F35212041B10060DB56 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F8F33212041B10060DB56 /* Results.swift */; };
+		CC3F8F372120AE480060DB56 /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F8F362120AE480060DB56 /* MovieListViewController.swift */; };
+		CC3F8F392120B05A0060DB56 /* CustomMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F8F382120B05A0060DB56 /* CustomMovieTableViewCell.swift */; };
 		CCD4BCCA2120133F00A3CB99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCC92120133F00A3CB99 /* AppDelegate.swift */; };
 		CCD4BCCC2120133F00A3CB99 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD4BCCB2120133F00A3CB99 /* HomeViewController.swift */; };
 		CCD4BCCF2120133F00A3CB99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD4BCCD2120133F00A3CB99 /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 		CC3F8F2E21203BDA0060DB56 /* CustomResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomResponse.swift; sourceTree = "<group>"; };
 		CC3F8F32212041B10060DB56 /* MovieResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieResponse.swift; sourceTree = "<group>"; };
 		CC3F8F33212041B10060DB56 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		CC3F8F362120AE480060DB56 /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		CC3F8F382120B05A0060DB56 /* CustomMovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMovieTableViewCell.swift; sourceTree = "<group>"; };
 		CCD4BCC62120133F00A3CB99 /* Moviato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moviato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD4BCC92120133F00A3CB99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD4BCCB2120133F00A3CB99 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				CCD4BCCB2120133F00A3CB99 /* HomeViewController.swift */,
+				CC3F8F362120AE480060DB56 /* MovieListViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			children = (
 				CC3F8F3021203EA30060DB56 /* Error Popup View */,
 				CC3F8F1D212035430060DB56 /* Progress View */,
+				CC3F8F382120B05A0060DB56 /* CustomMovieTableViewCell.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -413,10 +419,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Moviato/Pods-Moviato-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -454,6 +462,8 @@
 				CCD4BCCC2120133F00A3CB99 /* HomeViewController.swift in Sources */,
 				CCD4BCCA2120133F00A3CB99 /* AppDelegate.swift in Sources */,
 				CC3F8F2D21203BD00060DB56 /* CustomRequest.swift in Sources */,
+				CC3F8F372120AE480060DB56 /* MovieListViewController.swift in Sources */,
+				CC3F8F392120B05A0060DB56 /* CustomMovieTableViewCell.swift in Sources */,
 				CC3F8F21212036DA0060DB56 /* String_Constants.swift in Sources */,
 				CC3F8F34212041B10060DB56 /* MovieResponse.swift in Sources */,
 				CC3F8F2A212038640060DB56 /* ErrorPopupView.swift in Sources */,

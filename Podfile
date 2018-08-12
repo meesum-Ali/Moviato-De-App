@@ -6,5 +6,5 @@ target 'Moviato' do
   use_frameworks!
   # Pods for Moviato
   pod 'Alamofire', '~> 4.7'
-
+  pod 'Kingfisher', '~> 4.0'
 end
