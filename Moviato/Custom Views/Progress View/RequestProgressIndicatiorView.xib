@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bliss2-Bold.ttf">
+            <string>Bliss2-Bold</string>
+        </array>
+        <array key="Bliss2.ttf">
+            <string>Bliss2</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RequestProgressIndicatiorView" customModule="HblMobile_newDesign" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="03n-7g-jOl" id="JDC-Ei-2g0"/>
+                <outlet property="activityView" destination="l9Q-FM-Lkc" id="ORK-Af-UcE"/>
+                <outlet property="detailLbl" destination="irV-ED-cwk" id="hzl-iB-p3T"/>
+                <outlet property="headLbl" destination="eve-oV-Bz5" id="0Iz-qj-2qk"/>
+                <outlet property="progContentView" destination="Zz3-le-2yI" id="BtO-vX-rys"/>
+                <outlet property="view" destination="iN0-l3-epB" id="4sw-fp-nCP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view tag="110" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zz3-le-2yI">
+                    <rect key="frame" x="44.5" y="274.5" width="286.5" height="118"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Wait ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eve-oV-Bz5">
+                            <rect key="frame" x="20" y="10" width="246.5" height="23"/>
+                            <fontDescription key="fontDescription" name="Bliss2-Bold" family="Bliss 2" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Bliss2-Bold" family="Bliss 2" pointSize="35"/>
+                            </variation>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9Q-FM-Lkc">
+                            <rect key="frame" x="0.0" y="43" width="286.5" height="60"/>
+                            <subviews>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="03n-7g-jOl">
+                                    <rect key="frame" x="20" y="5" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="ODd-iy-S1x">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                        </constraint>
+                                        <constraint firstAttribute="height" constant="50" id="gfq-66-Ngo">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="100"/>
+                                        </constraint>
+                                    </constraints>
+                                    <color key="color" red="0.0" green="0.50980392159999999" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </activityIndicatorView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing your request ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irV-ED-cwk">
+                                    <rect key="frame" x="75" y="19.5" width="189" height="21"/>
+                                    <fontDescription key="fontDescription" name="Bliss2" family="Bliss 2" pointSize="18"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Bliss2" family="Bliss 2" pointSize="25"/>
+                                    </variation>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="03n-7g-jOl" secondAttribute="bottom" constant="5" id="4ME-ou-OYL"/>
+                                <constraint firstItem="irV-ED-cwk" firstAttribute="centerY" secondItem="03n-7g-jOl" secondAttribute="centerY" id="62R-vq-y0N"/>
+                                <constraint firstItem="irV-ED-cwk" firstAttribute="leading" secondItem="03n-7g-jOl" secondAttribute="trailing" constant="5" id="6JB-fo-dTZ"/>
+                                <constraint firstAttribute="trailing" secondItem="irV-ED-cwk" secondAttribute="trailing" constant="22.5" id="hDz-YP-8jw"/>
+                                <constraint firstItem="03n-7g-jOl" firstAttribute="top" secondItem="l9Q-FM-Lkc" secondAttribute="top" constant="5" id="q2Q-9A-Jgy"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="l9Q-FM-Lkc" secondAttribute="trailing" id="0Ti-m5-BB2"/>
+                        <constraint firstAttribute="bottom" secondItem="l9Q-FM-Lkc" secondAttribute="bottom" constant="15" id="0d8-PE-PYJ"/>
+                        <constraint firstItem="eve-oV-Bz5" firstAttribute="top" secondItem="Zz3-le-2yI" secondAttribute="top" constant="10" id="22c-J1-1cK"/>
+                        <constraint firstItem="03n-7g-jOl" firstAttribute="leading" secondItem="eve-oV-Bz5" secondAttribute="leading" id="BqO-vM-Xen"/>
+                        <constraint firstItem="l9Q-FM-Lkc" firstAttribute="top" secondItem="eve-oV-Bz5" secondAttribute="bottom" constant="10" id="OGx-WV-g1w"/>
+                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eve-oV-Bz5" secondAttribute="trailing" constant="20" symbolic="YES" id="V8v-IF-hKp"/>
+                        <constraint firstItem="l9Q-FM-Lkc" firstAttribute="leading" secondItem="Zz3-le-2yI" secondAttribute="leading" id="dlh-6g-GbO"/>
+                        <constraint firstItem="eve-oV-Bz5" firstAttribute="leading" secondItem="Zz3-le-2yI" secondAttribute="leading" constant="20" id="el0-Uf-6x3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="2" height="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69761344178082196" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Zz3-le-2yI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="koT-uu-hZo"/>
+                <constraint firstItem="Zz3-le-2yI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="xm4-Na-seO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
