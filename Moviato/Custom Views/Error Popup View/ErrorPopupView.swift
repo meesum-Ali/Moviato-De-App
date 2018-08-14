@@ -1,10 +1,9 @@
-//
 //  ErrorPopupView.swift
-//  HblMobile_newDesign
+//  Moviato
 //
-//  Created by Adil Abbas on 5/25/18.
-//  Copyright © 2018 Nargis Hameed. All rights reserved.
-//
+//  Created by Syed Meesum Ali on 12/08/2018.
+//  Copyright © 2018 SMeesumAli. All rights reserved.
+//  Used an already developed error popup view designed by me in another project not to be mention here :)
 
 import UIKit
 

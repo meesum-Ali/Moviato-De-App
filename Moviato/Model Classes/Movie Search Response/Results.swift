@@ -12,6 +12,7 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
+///model class for movie object.
 class Results : NSObject, Codable {
 	
     var vote_count : Int?

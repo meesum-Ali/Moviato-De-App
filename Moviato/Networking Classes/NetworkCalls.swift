@@ -8,8 +8,10 @@
 
 import Foundation
 import UIKit
+/// all network calls are defined here and from here calling a centralized singleton network request defined in wrapper created on alamofire.
 
 // MARK:- Common call
+///takes request object, VC from where its called, if alert msg is to be shown, progress if to be shown and returs success status with response object in completion callback
 func networkCall(_ reqObj: CustomRequest,
                              _ VC: UIViewController,
                              _ shouldShowAlert: Bool?,
@@ -31,7 +33,7 @@ func networkCall(_ reqObj: CustomRequest,
     }
     
     requestData = body as [String : AnyObject]
-    
+    //calling network manager's method (network manager is a custom small wrapper on alamofire)
     NetworkManager.shared().sendrequest(body: requestData!,
                                         vc: VC,
                                         shouldShowAlert: shouldShowAlert) { (resp, isSuccess) in
@@ -43,21 +45,4 @@ func networkCall(_ reqObj: CustomRequest,
     
 }
 
-fileprivate func toJson(data: AnyObject) -> String? {
-    var jsonData : NSData? = nil
-    var result: String? = nil
-    
-    do {
-        jsonData = try JSONSerialization.data(withJSONObject: data, options: []) as NSData
-    } catch {
-        return nil
-    }
-    if jsonData != nil {
-        result = NSString(data: jsonData! as Data, encoding:String.Encoding.utf8.rawValue) as String?
-    }
-    
-    
-    return result
-    
-}
 

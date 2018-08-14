@@ -7,8 +7,10 @@
 //
 
 import UIKit
+//using kingfisher for image cacheing
 import Kingfisher
 
+/// Movie cell class (data modeling into cell is done here instead of controller)
 class CustomMovieTableViewCell: UITableViewCell {
 
     @IBOutlet weak var bannerImageView: UIImageView!
@@ -33,7 +35,7 @@ class CustomMovieTableViewCell: UITableViewCell {
         overviewLbl.text = movieObject?.overview ?? "Overview Not Available"
         
         let url = URL(string: "http://image.tmdb.org/t/p/w92\(movieObject?.poster_path ?? "")")
-        
+        // kingfisher image cacheing and loading
         bannerImageView.kf.setImage(with: url, placeholder: UIImage(named:"avatar"), options: nil, progressBlock: { (initial, final) in
             
         }) { (img, err, cacheType, ur) in

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -168,6 +169,26 @@
                                             <outlet property="overviewLbl" destination="XuN-rg-WAm" id="UFl-JO-5TZ"/>
                                             <outlet property="releaseDateLbl" destination="GkP-jY-cpu" id="Tnf-0K-O85"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CustomMovieTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="loadingCell" rowHeight="79" id="Ddo-Ie-IHO">
+                                        <rect key="frame" x="0.0" y="107" width="375" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ddo-Ie-IHO" id="GWf-Wg-twJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="78.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1VK-YX-jqi">
+                                                    <rect key="frame" x="15" y="11" width="345" height="57"/>
+                                                    <color key="color" red="0.047390071899999997" green="0.61346340669999999" blue="0.42738504620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1VK-YX-jqi" secondAttribute="bottom" id="2pB-TJ-Oj8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1VK-YX-jqi" secondAttribute="trailing" id="aoU-Xf-1m6"/>
+                                                <constraint firstItem="1VK-YX-jqi" firstAttribute="top" secondItem="GWf-Wg-twJ" secondAttribute="topMargin" id="lwH-MZ-npb"/>
+                                                <constraint firstItem="1VK-YX-jqi" firstAttribute="leading" secondItem="GWf-Wg-twJ" secondAttribute="leadingMargin" id="uNS-6y-XhQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>

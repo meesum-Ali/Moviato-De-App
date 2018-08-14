@@ -8,6 +8,7 @@
 
 import Foundation
 
+// All string constants of project should be here (although not followed properly in this project :P)
 var kErrorPerformingOperation : String = {
     return "We are unable to process your request. Please try again later."//"Error performing operation"
 }()

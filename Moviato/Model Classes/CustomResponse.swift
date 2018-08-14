@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/// model class for response object (Using codable)
 public class CustomResponse: NSObject, Codable  {
    
     var page : Int?

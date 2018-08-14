@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// model class for request object (Using codable)
 class CustomRequest: NSObject, Codable {
     
      var api_key:String? = kApiKey

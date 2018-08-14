@@ -8,7 +8,9 @@
 
 import Foundation
 import UIKit
+/// Helper methods will be used all over in the app
 
+/// shows alert or error and takes title, message and controller from where it is called and returns a callback on tapping Ok/Cancel Button.
 public func showAlert(title:String,msg:String,
                       vc:UIViewController,
                       completionHandler: @escaping () -> Void) -> Void {
@@ -26,6 +28,7 @@ public func showAlert(title:String,msg:String,
     
 }
 
+/// Converts hex to RGB color and takes alpha to if opacity required e.g. UIColorFromRGB(rgbValue: 0x000000)
 public func UIColorFromRGB(rgbValue: UInt, alphaValue: Float? = 1.0) -> UIColor {
     return UIColor(
         red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
@@ -35,7 +38,7 @@ public func UIColorFromRGB(rgbValue: UInt, alphaValue: Float? = 1.0) -> UIColor 
     )
 }
 
-
+///returns serialized dictionary of request object (this project is using only one type of request object so it is programmed accordingly)
 func getSerializeDictionary(request: CustomRequest) -> [String:Any]? {
     
     let jsonEnc = JSONEncoder()
@@ -58,6 +61,8 @@ func getSerializeDictionary(request: CustomRequest) -> [String:Any]? {
     }
 }
 
+
+///returns serialized object of response data (this project is using only one type of response object so it is programmed accordingly)
 func getDeSerializeObj(responseData: Any) -> CustomResponse? {
     
     do{

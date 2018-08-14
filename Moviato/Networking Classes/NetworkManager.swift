@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import Alamofire
-
+/// A small custom wrapper on alamofire to customize according to app needs and all network related stuff is to be done here instead of controllers and other classes.
 class NetworkManager: NSObject {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -44,7 +44,7 @@ class NetworkManager: NSObject {
     class func shared() -> NetworkManager {
         return sharedNetworkManager
     }
-    
+    ///simple send request method designed for get requests only so far... its highly modifiable but not done yet :) all errors are handled from here and no need to specifically handle in controllers.
     func sendrequest(body: [String:Any],
                      vc: UIViewController,
                      shouldShowAlert: Bool? = true,
@@ -129,7 +129,7 @@ class NetworkManager: NSObject {
         
     }
     
-    // MARK :- Request Method
+    // MARK :- Method for pretty printing json.
     fileprivate func printJsonString(_ json: Any) {
         do {
             let data1 =  try JSONSerialization.data(withJSONObject: json, options: JSONSerialization.WritingOptions.prettyPrinted) // first of all convert json to the data

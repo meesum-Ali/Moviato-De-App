@@ -7,3 +7,4 @@
 //
 
 import Foundation
+/// other constants like ratios and calculated heights etc are to be defined here.
